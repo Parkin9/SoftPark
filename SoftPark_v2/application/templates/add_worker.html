@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}SoftPark - Dodaj pracownika{% endblock %}
+{% block content %}
+<br>
+<h4 class="text-center"><b>Dodawanie nowego pracownika</b></h4>
+<form method="POST">
+    <div class="form-group">
+        <label for="login">Login:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="login"
+          name="login"
+          placeholder=""
+          required
+        />
+    </div>
+    <div class="form-group">
+        <label for="first_name">Imię:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="first_name"
+          name="first_name"
+          placeholder=""
+          required
+        />
+    </div>
+    <div class="form-group">
+        <label for="password1">Hasło:</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password1"
+          name="password1"
+          placeholder=""
+          required
+        />
+    </div>
+    <div class="form-group">
+        <label for="password2">Potwierdź hasło:</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password2"
+          name="password2"
+          placeholder=""
+          required
+        />
+    </div>
+    <div class="text-right">
+        <button type="submit" class="btn btn-primary">Dodaj pracownika</button>
+    </div>
+</form>
+{% endblock %}

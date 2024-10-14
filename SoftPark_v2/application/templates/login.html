@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}SoftPark - Zaloguj się{% endblock %}
+{% block content %}
+<br>
+<h4 class="text-center"><b>Logowanie</b></h4>
+<form method="POST">
+    <div class="form-group">
+        <label for="login">Login:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="login"
+          name="login"
+          placeholder=""
+          required
+        />
+    </div>
+    <div class="form-group">
+        <label for="password">Hasło:</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          name="password"
+          placeholder=""
+          required
+        />
+    </div>
+    <div class="text-right">
+        <button type="submit" class="btn btn-primary">Zaloguj się</button>
+    </div>
+</form>
+{% endblock %}
